@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.michelle.veranos.Principal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#000080"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sistema De Veranos"
+            android:textSize="16sp"
+            android:textColor="#FFFF66"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Instituto Tecnológico de Chihuahua II"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#DEDECA"
+            android:gravity="center_horizontal"/>
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/logo_oficial_gray" />
+
+            <LinearLayout
+                android:id="@+id/form"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Agregar Materia"
+                    android:id="@+id/button"
+                    android:onClick="atividaMate"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ver Materias"
+                    android:id="@+id/button2"
+                    android:onClick="mostrarMaterias"
+                    android:layout_below="@+id/button"
+                    android:layout_marginTop="41dp"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <ProgressBar android:id="@+id/login_progress"
+            style="?android:progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+
+</LinearLayout>
